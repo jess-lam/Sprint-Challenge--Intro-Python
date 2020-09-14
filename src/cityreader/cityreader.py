@@ -32,7 +32,8 @@ def cityreader(cities=[]):
     next(reader)
 
     for citylist in reader:
-      cities.append(f"City: {citylist[0]}\t Lat: {float(citylist[3])}\t Lon: {float(citylist[4])}")
+      #cities.append(f"City: {citylist[0]}\t Lat: {float(citylist[3])}\t Lon: {float(citylist[4])}")
+      cities.append(City(citylist[0], float(citylist[3]), float(citylist[4])))
 
     
 
